@@ -9,6 +9,10 @@ rho=757.4, r=870.8 ly
 alpha_deg=29.58 degree
 theta_deg=60.42 degree
 
+S_vs_lambda.singletheta.py MWG 60.42 --outsuffix tyc4419a1 --step_lambda_A 25
+
+-----------------
+
 tyc3925a8
 calc_3Dpos.py Tycho 00:19:59.799 +62:05:19.23 2011
 delta_t_years = 439.0 years = 2011.0-1572.0
@@ -19,6 +23,9 @@ x,y,z=83.2,-273.6,-126.4 ly
 rho=285.9, r=312.6 ly
 alpha_deg=-23.85 degree
 theta_deg=113.85 degree
+
+S_vs_lambda.singletheta.py MWG 113.85 --outsuffix tyc3925a8 --step_lambda_A 25
+
 
 example for list
 arest@arminmac3(YSE,bash)% more /Users/arest/eta-car/3Dplot/Eta_LE_positions
