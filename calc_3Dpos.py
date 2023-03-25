@@ -195,7 +195,12 @@ class calc3Dposclass(pdastroclass):
             print(f'rho={rho_ly:.1f}, r={r_ly:.1f} ly')
 
         alpha_deg = math.atan(z_ly/rho_ly)*rad2deg
+        if alpha_deg<-90.0: alpha_deg+=180.0
+        if alpha_deg>90.0: alpha_deg-=180.0
         theta_deg = math.atan(rho_ly/z_ly)*rad2deg
+        if theta_deg<0.0: theta_deg+=180.0
+        if theta_deg>180.0: theta_deg-=180.0
+        
         if verbose: 
             print(f'alpha_deg={alpha_deg:.2f} degree')
             print(f'theta_deg={theta_deg:.2f} degree')
